@@ -672,25 +672,25 @@ python 04_guardrails_validator.py | tee ../evidence/04_pii_demo_log.txt
 Hãy đi qua danh sách này trước khi push lên GitHub:
 
 **Mã nguồn:**
-- [ ] `src/01_langsmith_rag_pipeline.py` chạy không có lỗi, in ra 50 câu hỏi/đáp
-- [ ] `src/02_prompt_hub_ab_routing.py` chạy không có lỗi, log hiển thị nhãn v1/v2
-- [ ] `src/03_ragas_evaluation.py` hoàn thành và in bảng điểm so sánh
-- [ ] `src/04_guardrails_validator.py` chạy không có lỗi, hiển thị kết quả các test case
-- [ ] `data/ragas_report.json` tồn tại và chứa điểm của cả V1 lẫn V2
+- [x] `src/01_langsmith_rag_pipeline.py` chạy không có lỗi, in ra 50 câu hỏi/đáp
+- [x] `src/02_prompt_hub_ab_routing.py` chạy không có lỗi, log hiển thị nhãn v1/v2
+- [x] `src/03_ragas_evaluation.py` hoàn thành và in bảng điểm so sánh
+- [x] `src/04_guardrails_validator.py` chạy không có lỗi, hiển thị kết quả các test case
+- [x] `data/ragas_report.json` tồn tại và chứa điểm của cả V1 lẫn V2
 
 **Bằng chứng (evidence):**
-- [ ] `evidence/01_langsmith_traces.png` — Ảnh chụp LangSmith, thấy rõ ít nhất 50 traces
-- [ ] `evidence/02_prompt_hub.png` — Ảnh chụp Prompt Hub, thấy rõ 2 prompt được đặt tên
-- [ ] `evidence/02_ab_routing_log.txt` — File log có nội dung, hiển thị cả v1 lẫn v2
-- [ ] `evidence/03_ragas_scores.png` — Ảnh chụp bảng điểm RAGAS trên terminal
-- [ ] `evidence/03_ragas_report.json` — File JSON hợp lệ (sao chép từ `data/`)
-- [ ] `evidence/04_pii_demo_log.txt` — File log có ít nhất 5 test case
-- [ ] `evidence/04_json_demo_log.txt` — File log có ít nhất 4 test case
+- [x] `evidence/01_langsmith_traces.png` — Ảnh chụp LangSmith, thấy rõ ít nhất 50 traces
+- [x] `evidence/02_prompt_hub.png` — Ảnh chụp Prompt Hub, thấy rõ 2 prompt được đặt tên
+- [x] `evidence/02_ab_routing_log.txt` — File log có nội dung, hiển thị cả v1 lẫn v2
+- [x] `evidence/03_ragas_scores.png` — Ảnh chụp bảng điểm RAGAS trên terminal
+- [x] `evidence/03_ragas_report.json` — File JSON hợp lệ (sao chép từ `data/`)
+- [x] `evidence/04_pii_demo_log.txt` — File log có ít nhất 5 test case
+- [x] `evidence/04_json_demo_log.txt` — File log có ít nhất 4 test case
 
 **Bảo mật:**
-- [ ] `.gitignore` có dòng `.env`
-- [ ] Không có API key nào xuất hiện trong bất kỳ tệp `.py` nào
-- [ ] Lệnh `git diff --cached` không hiển thị nội dung `.env`
+- [x] `.gitignore` có dòng `.env`
+- [x] Không có API key nào xuất hiện trong bất kỳ tệp `.py` nào
+- [x] Lệnh `git diff --cached` không hiển thị nội dung `.env`
 
 ---
 
